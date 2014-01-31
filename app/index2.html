@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html lang="en" ng-app="phonecatApp">
+<head>
+    <title>Tutorial app/index.html</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="../Content/bootstrap.css" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="ts/controllers.js"></script>
+
+</head>
+<body ng-controller="PhoneListCtrl">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <!--Sidebar-->
+                Search: <input ng-model="query"/>
+            </div>
+            <div class="col-md-10">
+                <ul class="phones">
+                    <li ng-repeat="phone in phones | filter:query">
+                        <span>{{phone.name}}</span>
+                        <p>{{phone.snippet}}</p>
+                    </li>
+                </ul>            
+            </div>
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>

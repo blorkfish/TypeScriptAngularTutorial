@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html lang="en" ng-app="phonecatApp">
+<head>
+    <title>Tutorial app/index.html</title>
+    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="../Content/bootstrap.css" />
+    <script src="../Scripts/angular.js"></script>
+    <script src="ts/controllers.js"></script>
+
+</head>
+    <body ng-controller="PhoneListCtrl">
+        
+        <ul>
+            <li ng-repeat="phone in phones">
+                <span>{{phone.name}}</span>
+                <p>{{phone.snippet}}</p>
+            </li>
+        </ul>
+        
+        
+
+        <p>Nothing here {{'yet' + '!'}}</p>
+    
+            <p> 1 + 2 = {{ 1 + 2 }}</p>
+    
+            <ul>
+                <li>
+                    <span>Nexus S</span>
+                    <p>Fast just got faster.</p>
+                </li>
+                <li>
+                    <span>Motorola</span>
+                    <p>The Next, Next</p>
+                </li>
+            </ul>
+            <p>Total Number of phones: {{phones.length}}</p>
+    
+        <table>
+            <tr><th>row number</th></tr>
+            <tr ng-repeat="i in [0,1,2,3]"><td>{{i}}</td></tr>
+        </table>
+
+    </body>
+</html>

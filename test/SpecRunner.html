@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<html>
+<head>
+    <title>Partner Settings Test Suite</title>
+    <!-- include your script files (notice that the jasmine source files have been added to the project) -->
+    <script type="text/javascript" src="../Scripts/jasmine/jasmine.js"></script>
+    <script type="text/javascript" src="../Scripts/jasmine/jasmine-html.js"></script>
+    <script type="text/javascript" src="../Scripts/angular.js"></script>
+    <script type="text/javascript" src="../Scripts/angular-mocks.js"></script>
+    <script type="text/javascript" src="../app/ts/controllers.js"></script>
+    <script type="text/javascript" src="unit/controllersSpec.js"></script>
+    <link rel="stylesheet" href="../Content/jasmine/jasmine.css" />
+</head>
+<body>
+    <!-- use Jasmine to run and display test results -->
+    <script type="text/javascript">
+        var jasmineEnv = jasmine.getEnv();
+        jasmineEnv.addReporter(new jasmine.HtmlReporter());
+        jasmineEnv.execute();
+    </script>
+</body>
+</html>
